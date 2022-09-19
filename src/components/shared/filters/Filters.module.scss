@@ -1,0 +1,13 @@
+@use '../../../scss/constants';
+
+.filters {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  padding: 0 14px;
+  margin-bottom: 18px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    margin-bottom: 28px;
+  }
+}

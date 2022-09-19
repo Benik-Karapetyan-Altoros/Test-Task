@@ -1,0 +1,14 @@
+@use '../../../../../scss/constants';
+
+.show-all-btn {
+  border: 2px solid map-get($map: constants.$colors, $key: 'blue');
+  display: flex;
+  background: map-get($map: constants.$gradients, $key: 'pale-blue-white');
+  padding: 8px 28px;
+  border-radius: 100px;
+  margin: auto;
+  color: map-get($map: constants.$colors, $key: 'button-blue');
+  font-size: 1.8rem;
+  font-weight: map-get($map: constants.$font-weights, $key: 'black');
+  line-height: 21.6px;
+}

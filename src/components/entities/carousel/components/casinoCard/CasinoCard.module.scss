@@ -1,0 +1,131 @@
+@use '../../../../../scss/constants';
+
+.card {
+  background-color: map-get($map: constants.$colors, $key: 'blue-black');
+  border-radius: 6px;
+  width: 242px;
+  position: relative;
+
+  &-header {
+    padding: 16px 0 10px;
+  }
+
+  &-body {
+    font-family: constants.$font-family-secondary;
+    outline: 2px dashed map-get($map: constants.$colors, $key: 'tab-blue');
+    outline-offset: -2px;
+    overflow: hidden;
+    border-radius: 0 0 80px 0;
+    background-color: map-get($map: constants.$colors, $key: 'white');
+    padding: 21px 0 29px;
+    position: relative;
+  }
+
+  &-title {
+    color: map-get($map: constants.$colors, $key: 'big-tab-blue');
+    font-family: constants.$font-family-secondary;
+    font-size: 2rem;
+    line-height: 23.44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 8px;
+    padding: 0 21px;
+  }
+}
+
+.label {
+  width: 78px;
+  height: 18px;
+  background: map-get(constants.$gradients, 'yellow-yellow');
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -18px;
+  top: 13px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: map-get($map: constants.$font-weights, $key: 'bold');
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 58px;
+  margin: auto;
+}
+
+.review-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: map-get($map: constants.$colors, $key: 'white');
+  font-size: 1.4rem;
+  line-height: 9.91px;
+  letter-spacing: 0.02em;
+
+  &:active {
+    color: map-get($map: constants.$colors, $key: 'white');
+  }
+
+  &:hover {
+    color: map-get($map: constants.$colors, $key: 'white');
+  }
+}
+
+.divider {
+  width: 70px;
+  height: 2px;
+  background-color: map-get($map: constants.$colors, $key: 'big-tab-blue');
+  margin: 0 auto 12px;
+}
+
+.bonus {
+  display: flex;
+  justify-content: center;
+  color: map-get($map: constants.$colors, $key: 'blue-black');
+  margin-bottom: 12px;
+
+  &-percent {
+    font-size: 1.6rem;
+    line-height: 12.8px;
+    text-align: right;
+    margin-right: 4px;
+  }
+
+  &-amount {
+    font-size: 5.4rem;
+    font-weight: map-get($map: constants.$font-weights, $key: 'semi-bold');
+    line-height: 48.6px;
+  }
+
+  &-spin {
+    color: #0c2b48;
+    font-size: 2.1rem;
+    font-weight: map-get($map: constants.$font-weights, $key: 'semi-bold');
+    line-height: 24.61px;
+    text-align: center;
+  }
+}
+
+.casino-name {
+  color: map-get($map: constants.$colors, $key: 'big-tab-blue');
+  font-size: 1.6rem;
+  line-height: 15px;
+  text-align: center;
+}
+
+.info-icon {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+}

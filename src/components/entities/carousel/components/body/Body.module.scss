@@ -1,0 +1,58 @@
+@use '../../../../../scss/constants';
+
+.body {
+  position: relative;
+  max-width: 1153px;
+  padding-left: 18px;
+  margin: 0 auto 18px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'xl')) {
+    padding-left: 0;
+  }
+}
+
+.slider {
+  height: 388px;
+}
+
+.bullet {
+  cursor: pointer;
+  display: inline-block;
+  background: map-get($map: constants.$colors, $key: 'white');
+  border: 1px solid map-get($map: constants.$colors, $key: 'solid-blue');
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  margin-right: 10px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    width: 40px;
+    height: 12px;
+  }
+
+  &-active {
+    background: map-get($map: constants.$colors, $key: 'blue');
+
+    @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+      background: map-get($map: constants.$gradients, $key: 'blue-dark-blue');
+    }
+  }
+}
+
+.prev-button {
+  cursor: pointer;
+  position: absolute;
+  left: -53px;
+  top: 147.65px;
+}
+
+.next-button {
+  cursor: pointer;
+  position: absolute;
+  top: 147.65px;
+  right: -53px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.25;
+}

@@ -1,0 +1,27 @@
+@use '../../../../scss/constants';
+
+.filter-item {
+  background: map-get($map: constants.$colors, $key: 'white');
+  border: 1px solid map-get($map: constants.$colors, $key: 'blue');
+  border-radius: 100px;
+  color: map-get($map: constants.$colors, $key: 'blue');
+  font-weight: map-get($map: constants.$font-weights, $key: 'bold');
+  font-size: 1.2rem;
+  line-height: 12px;
+  padding: 6px 18px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    border: 1px solid map-get($map: constants.$colors, $key: 'solid-blue');
+    color: map-get($map: constants.$colors, $key: 'solid-blue');
+    font-weight: map-get($map: constants.$font-weights, $key: 'regular');
+    font-size: 1.6rem;
+    line-height: 22.4px;
+    padding: 6px 50px;
+  }
+
+  &--active {
+    background: map-get($map: constants.$gradients, $key: 'blue-dark-blue');
+    color: map-get($map: constants.$colors, $key: 'white');
+    font-weight: map-get($map: constants.$font-weights, $key: 'bold');
+  }
+}

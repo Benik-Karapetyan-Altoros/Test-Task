@@ -1,0 +1,21 @@
+@use '../../../../../scss/constants';
+
+.play-button {
+  display: flex;
+  background: none;
+  background-color: map-get($map: constants.$colors, $key: 'yellow');
+  padding: 8px 10px;
+  border: none;
+  border-radius: 100px;
+}
+
+.play-button-content {
+  display: inline-block;
+  width: 138px;
+  color: map-get($map: constants.$colors, $key: 'strong-blue');
+  font-size: 1.6rem;
+  font-weight: map-get($map: constants.$font-weights, $key: 'bold');
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+@use './constants';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.6rem constants.$font-family-primary;
+}
+
+.bb {
+  border: 1px solid black;
+}
+
+.bw {
+  border: 1px solid white;
+}

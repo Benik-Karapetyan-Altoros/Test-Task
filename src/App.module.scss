@@ -1,0 +1,6 @@
+@use './scss/constants';
+
+.app {
+  background: map-get($map: constants.$colors, $key: 'solid-gray');
+  padding: 38px 0;
+}

@@ -1,0 +1,38 @@
+@use '../../../../../scss/constants';
+
+.header {
+  max-width: 1043px;
+  padding: 0 18px;
+  margin-bottom: 18px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    margin-bottom: 28px;
+  }
+}
+
+.title {
+  color: map-get($map: constants.$colors, $key: 'dark-blue');
+  font-size: 2.8rem;
+  font-weight: map-get($map: constants.$font-weights, $key: 'bold');
+  line-height: 30.8px;
+  margin-bottom: 6px;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    font-size: 4.2rem;
+    font-weight: map-get($map: constants.$font-weights, $key: 'semi-bold');
+    line-height: 58.3px;
+    margin-bottom: 0;
+  }
+}
+
+.text {
+  color: map-get($map: constants.$colors, $key: 'dark-blue-black');
+  font-size: 1.6rem;
+  line-height: 22.21px;
+  margin-bottom: 0;
+
+  @media (min-width: map-get($map: constants.$media-breakpoints, $key: 'sm')) {
+    font-size: 2rem;
+    line-height: 27.76px;
+  }
+}

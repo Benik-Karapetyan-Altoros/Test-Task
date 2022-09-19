@@ -1,0 +1,41 @@
+$font-family-primary: 'Lato', sans-serif;
+$font-family-secondary: 'Roboto', sans-serif;
+
+$media-breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+
+$font-weights: (
+  'thin': 100,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semi-bold': 600,
+  'bold': 700,
+  'black': 900,
+);
+
+$colors: (
+  'dark-blue-black': #1e0d38,
+  'strong-blue': #051d33,
+  'blue-black': #0c2b48,
+  'dark-blue': #12395d,
+  'blue': #2a577e,
+  'solid-blue': #29557c,
+  'button-blue': #11314f,
+  'big-tab-blue': #0460a9,
+  'tab-blue': #1d8efa,
+  'yellow': #fac515,
+  'solid-gray': #ececec,
+  'white': #ffffff,
+);
+
+$gradients: (
+  'blue-dark-blue': linear-gradient(274.15deg, #2a577e 3.47%, #12395d 66.48%),
+  'yellow-yellow': linear-gradient(267.92deg, #fdc93f 15.13%, #f8b032 100.03%),
+  'pale-blue-white': linear-gradient(55.31deg, #f1fdff 16.56%, #ffffff 91.12%),
+);

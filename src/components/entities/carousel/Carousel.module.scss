@@ -1,0 +1,7 @@
+@use '../../../scss/constants.scss';
+
+.carousel {
+  background-color: map-get($map: constants.$colors, $key: 'solid-gray');
+  max-width: 1440px;
+  margin: auto;
+}
